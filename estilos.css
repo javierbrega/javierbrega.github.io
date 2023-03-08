@@ -1,0 +1,216 @@
+
+/* Establece la fuente de texto del cuerpo de la página a Roboto
+ o una fuente sans-serif como respaldo si Roboto no está disponible. */
+body {
+    font-family: roboto, sans-serif;
+    
+    background-color: black;
+  }
+  
+ol {
+  color: #ccc;
+}
+
+
+/*Estilos Generales*/
+/*aqui solo quitamos las viñetas al menu que esta en el nav*/
+.contenedor {
+    display: block;
+    width: 100%px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.imagen-centrada{
+  display: block;
+  margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+nav li{
+    line-height: 3rem; 
+}
+nav a{
+    text-align: center;
+    color: #000000;
+    display: block;
+    padding: 0 2.5em;
+    text-decoration: none;
+    
+
+    
+}
+nav a:hover{
+    background: rgba(69, 97, 181, 0.5);
+}
+
+nav ul ul {
+    display: 0;
+}
+/*primer nivel*/
+nav > ul {
+    background: rgb(123, 147, 196);
+    display: table;
+    width: 100%;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav > ul >li {
+    float: left;
+}
+
+section{
+    display: flex;
+    width: 1328px;
+    height: 350px;
+}
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    
+}
+section img:hover{
+    cursor: crosshair;
+    width: 150px;
+    opacity: 1;
+    filter: contrast(100%);
+}
+p {
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#ccc
+}
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .video-column {
+    flex: 1;
+  }
+  
+  .description-column {
+    flex: 1;
+    padding-left: 20px;
+  }
+h2{
+    font-size: large;
+    color: #ccc;
+}  
+ p{
+    font-size: large;
+ }
+ .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    flex: 1 1 300px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .gallery-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gallery-item:hover:before {
+    opacity: 1;
+  }
+  
+  .gallery-item:hover:after {
+    content: attr(data-title);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+  form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+footer {
+    width: 100%;
+    text-align: center;
+    display: -moz-box;
+    align-items: center;
+  }
+footer hr {
+    border: none; /* quita el borde predeterminado */
+    height: 1px; /* establece la altura de la línea */
+    background-color: #ccc; /* establece el color de fondo de la línea */
+    margin: 20px 0; /* establece el margen superior e inferior */
+    padding: 0; /* establece el relleno a cero */
+  }
