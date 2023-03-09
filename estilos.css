@@ -214,3 +214,8 @@ footer hr {
     margin: 20px 0; /* establece el margen superior e inferior */
     padding: 0; /* establece el relleno a cero */
   }
+#construccion{
+  
+  display: block;
+  margin: 0 auto;
+}
